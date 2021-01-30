@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-.head {
-  width: 100%;
+header {
   height: 50px;
   background-color: #ff9a4b;
 }
@@ -13,63 +12,57 @@
 main {
   width: 960px;
   margin: 50px auto;
+  display: flex;
 }
 
 .step {
-  display: flex;
-  flex: wrap;
+  width: 300px;
+  margin-right: 30px;
+  padding: 10px;
+  position: relative;
+  background-color: #eeeeee;
 }
 
-.title {
-  display: inline-block;
-  background-color: #ff9a4b;
-  color: white;
-}
-
-h3 {
-  padding-top: 175px;
-}
-
-p {
-  padding-top: 5px;
+.step:last-child {
+  margin-right: 0;
 }
 
 .step1 {
-  width: 300px;
-  margin-right: 30px;
+  height: 150px;
   background-image: url(img/flow01.png);
-  background-size: 280px 150px;
-  padding: 10px 10px;
-  background-position: center top;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  background-color: #eeeeee;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .step2 {
-  width: 300px;
-  margin-right: 30px;
+  height: 150px;
   background-image: url(img/flow02.png);
-  background-size: 280px 150px;
-  padding: 10px 10px;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  background-color: #eeeeee;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .step3 {
-  width: 300px;
+  height: 150px;
   background-image: url(img/flow03.png);
-  background-size: 280px 150px;
-  padding: 10px 10px;
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  background-color: #eeeeee;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.title {
+  padding: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: #fff;
+}
+
+h3 {
+  margin: 15px 0 5px;
 }
 
 
-.foot {
-  width: 100%;
+footer {
   height: 50px;
   background-color: #aaaaaa;
 }
